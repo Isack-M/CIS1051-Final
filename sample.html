@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample BM</title>
+    <link rel="icon" type="image/jpg" href="Images/favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+          <img src="images/favicon.jpg" height="60" />
+          BM: Sample
+        </a>
+
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> Home </a>
+          </li>
+          <li class="navbar__item">
+            <a href="/sample.html" class="navbar__links"> Sample </a>
+          </li>
+          <li class="navbar__btn">
+            <a href="SignUp.html" class="button"> Sign Up </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="Smain">
+      <div class="Smain__container">
+        <div class="Smain__content">
+          <h1>
+            Click the following button to simulate your total income:
+          </h1>
+        </div>
+
+        <div class="Smain__table">
+          <form action="" class="form__container">
+            <button type="submit" id="totalIncome">Click Me!</button>
+            <br />
+            <br />
+
+            <label for="am">Name:</label>
+            <input type="text" id="namePerson" name="nm">
+            <br><br>
+            <label for="inp1">Sample Income:</label>
+            <input type="number" id="sampleIncome" name="inp1">
+            <br><br>
+            <label for="inp2">Sales:</label>
+            <input type="number" id="sales" name="inp2" />
+            <br><br>
+            <label for="inp3">Expenses:</label>
+            <input type="number" id="expenses" name="inp3" />
+
+            <br /><br />
+            <label for="totalIncome">Total Income:</label>
+            <p id="totalIncomeResult"></p>
+
+          </form>
+
+
+          <table border="1" class="table__container">
+            <thead>
+                <th>Name</th>
+                <th>Total Income</th>
+            </thead>
+            <tbody id="tblBody"></tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
